@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/main_item_genre"
+        android:layout_width="fill_parent"
+        android:layout_height="90.0dip"
+        android:background="@drawable/bg_white_list_selector">
+
+        <ImageView
+            android:id="@+id/img_avatar_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0sp"
+            android:src="@mipmap/ic_pop_music"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_genre_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_33sdp"
+            android:layout_marginRight="10.0sp"
+            android:layout_toLeftOf="@+id/img_indicator"
+            android:layout_toRightOf="@+id/img_avatar_new"
+            android:singleLine="true"
+            android:text="ABCBCBC"
+            android:textColor="@color/main_color_dark"
+            android:textSize="@dimen/_18sdp" />
+
+        <ImageView
+            android:id="@+id/img_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0sp"
+            android:src="@drawable/ic_chevron_right_grey600_24dp" />
+    </RelativeLayout>
+</RelativeLayout>

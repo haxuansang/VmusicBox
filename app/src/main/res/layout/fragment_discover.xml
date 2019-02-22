@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.DiscoverFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/gray_text"
+                        android:textSize="25sp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="12dp"
+                        android:text="@string/top_hit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginRight="8dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/gray_text"
+                        android:textSize="15sp"
+                        android:text="@string/view_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/recycler_discover_tophit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/gray_text"
+                        android:textSize="25sp"
+                        android:paddingLeft="10dp"
+                        android:paddingBottom="12dp"
+                        android:text="@string/genres"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginRight="8dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/gray_text"
+                        android:textSize="15sp"
+                        android:text="@string/view_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginLeft="8dp"
+                    android:id="@+id/recycler_discover_genres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>

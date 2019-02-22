@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_share">
+        <item>@string/send_mail</item>
+        <item>@string/website</item>
+        <item>@string/rate_me</item>
+        <item>@string/more_apps</item>
+    </string-array>
+    <string-array name="list_options">
+        <item>@string/add_to_playlist</item>
+        <item>@string/Delete_track</item>
+        <item>@string/set_as_ringtone</item>
+        <item>@string/set_as_notification</item>
+    </string-array>
+    <string-array name="list_options_playlist">
+        <item>@string/play_all</item>
+        <item>@string/rename_playlist</item>
+        <item>@string/delete_playlist</item>
+    </string-array>
+    <string-array name="list_track_playlist">
+        <item>@string/remove_to_playlist</item>
+    </string-array>
+    <string-array name="list_create_playlist">
+        <item>@string/create_playlist</item>
+    </string-array>
+    <string-array name="list_menus">
+        <item>@string/home</item>
+        <item>@string/library</item>
+    </string-array>
+</resources>

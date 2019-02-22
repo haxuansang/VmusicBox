@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/btn_add_playlist"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0sp"
+        android:background="@color/backgroud_box_playlist">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0sp"
+            android:background="@drawable/ic_arrow_back_grey600_36dp"
+            android:minHeight="1.0sp"
+            android:minWidth="1.0sp" />
+
+        <TextView
+            android:id="@+id/tv_name_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:text="Favorite"
+            android:textColor="@color/header_text"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

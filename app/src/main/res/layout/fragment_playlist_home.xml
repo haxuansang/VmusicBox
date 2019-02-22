@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+ >
+  <FrameLayout
+      android:paddingTop="10dip"
+      android:paddingLeft="10dip"
+      android:paddingRight="10dip"
+      android:id="@+id/head_"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <include
+        android:id="@+id/header_playlist"
+        layout="@layout/header_playlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+   />
+
+    <include
+        android:id="@+id/header_detail_playlist"
+        layout="@layout/header_detail_playlist"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0sp"
+        android:visibility="gone"
+
+        />
+  </FrameLayout>
+    <ListView
+        android:id="@+id/list_playlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/head_"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:divider="@color/list_view_divider_fragment_color"
+        android:dividerHeight="0.8dip"
+        android:scrollbars="none" />
+
+    <ListView
+        android:layout_below="@+id/head_"
+        android:id="@+id/list_detail_playlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="1.0sp"
+        android:divider="@color/list_view_divider_fragment_color"
+        android:dividerHeight="0.8dip"
+        android:scrollbars="none"
+        android:visibility="gone" />
+</RelativeLayout>

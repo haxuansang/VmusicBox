@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/widget_margin">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/appwidget_dark_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/widget_margin_top"
+        android:paddingLeft="@dimen/widget_margin"
+        android:paddingRight="@dimen/widget_margin"
+        android:paddingTop="@dimen/widget_margin_top">
+
+        <ImageView
+            android:id="@+id/img_play"
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_music_default" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/widget_margin"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_song"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="14.0sp"
+                android:textStyle="bold">
+
+                <requestFocus
+                    android:duplicateParentState="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_song"
+                android:layout_marginTop="@dimen/widget_margin_top">
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_skip_next_white_36dp"
+                    android:minHeight="1.0sp"
+                    android:minWidth="1.0sp" />
+
+                <ImageView
+                    android:id="@+id/btn_play"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_centerInParent="true"
+                    android:minHeight="1.0sp"
+                    android:minWidth="1.0sp"
+                    android:src="@drawable/ic_play_arrow_white_36dp" />
+
+                <Button
+                    android:id="@+id/btn_prev"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/ic_skip_previous_white_36dp"
+                    android:minHeight="1.0sp"
+                    android:minWidth="1.0sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="@android:style/Widget.ProgressBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

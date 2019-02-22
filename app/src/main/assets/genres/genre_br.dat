@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Popular Music",
+    "keyword": "popular music",
+    "type": "36"
+  },
+  {
+    "name": "Alternativa Rock",
+    "keyword": "alternative rock",
+    "type": "1"
+  },
+  {
+    "name": "Ambiente",
+    "keyword": "ambient",
+    "type": "2"
+  },
+  {
+    "name": "Classica",
+    "keyword": "classical",
+    "type": "3"
+  },
+  {
+    "name": "Country",
+    "keyword": "country",
+    "type": "4"
+  },
+  {
+    "name": "Dance",
+    "keyword": "dance",
+    "type": "5"
+  },
+  {
+    "name": "Deep House",
+    "keyword": "deep house",
+    "type": "6"
+  },
+  {
+    "name": "Disco",
+    "keyword": "disco",
+    "type": "7"
+  },
+  {
+    "name": "Drum & Bass",
+    "keyword": "drum bass",
+    "type": "8"
+  },
+  {
+    "name": "Dubstep",
+    "keyword": "dubstep",
+    "type": "9"
+  },
+  {
+    "name": "Electro",
+    "keyword": "electro",
+    "type": "10"
+  },
+  {
+    "name": "Electronica",
+    "keyword": "electronic",
+    "type": "11"
+  },
+  {
+    "name": "Folk",
+    "keyword": "folk",
+    "type": "12"
+  },
+  {
+    "name": "Hardcore Techno",
+    "keyword": "hardcore techno",
+    "type": "13"
+  },
+  {
+    "name": "Hip hop",
+    "keyword": "hiphop",
+    "type": "14"
+  },
+  {
+    "name": "House",
+    "keyword": "house",
+    "type": "15"
+  },
+  {
+    "name": "Indie Rock",
+    "keyword": "indie rock",
+    "type": "16"
+  },
+  {
+    "name": "Jazz",
+    "keyword": "jazz",
+    "type": "17"
+  },
+  {
+    "name": "Latin",
+    "keyword": "latin",
+    "type": "18"
+  },
+  {
+    "name": "Metal",
+    "keyword": "metal",
+    "type": "19"
+  },
+  {
+    "name": "Minimal Techno",
+    "keyword": "minimal techno",
+    "type": "20"
+  },
+  {
+    "name": "Piano",
+    "keyword": "piano",
+    "type": "21"
+  },
+  {
+    "name": "Pop",
+    "keyword": "pop",
+    "type": "22"
+  },
+  {
+    "name": "Progressive House",
+    "keyword": "progressive house",
+    "type": "23"
+  },
+  {
+    "name": "Punk",
+    "keyword": "punk",
+    "type": "24"
+  },
+  {
+    "name": "R&B",
+    "keyword": "rb",
+    "type": "25"
+  },
+  {
+    "name": "Rap",
+    "keyword": "rap",
+    "type": "26"
+  },
+  {
+    "name": "Reggae",
+    "keyword": "reggae",
+    "type": "27"
+  },
+  {
+    "name": "Rock",
+    "keyword": "rock",
+    "type": "28"
+  },
+  {
+    "name": "Soul",
+    "keyword": "soul",
+    "type": "29"
+  },
+  {
+    "name": "Tech House",
+    "keyword": "tech house",
+    "type": "30"
+  },
+  {
+    "name": "Techno",
+    "keyword": "techno",
+    "type": "31"
+  },
+  {
+    "name": "Trance",
+    "keyword": "trance",
+    "type": "32"
+  },
+  {
+    "name": "Trap",
+    "keyword": "trap",
+    "type": "33"
+  },
+  {
+    "name": "Trip Hop",
+    "keyword": "trip hop",
+    "type": "34"
+  },
+  {
+    "name": "World",
+    "keyword": "world",
+    "type": "35"
+  }
+]

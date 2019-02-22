@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+      android:id="@+id/menu_item_YourBox"
+      android:title="Your Box"
+      android:icon="@drawable/ic_box"
+
+
+      />
+  <item
+      android:id="@+id/menu_item_Discover"
+      android:title="Discover"
+      android:icon="@drawable/ic_discover"
+
+      />
+  <item
+      android:id="@+id/menu_item_Playlists"
+      android:title="Playlists"
+      android:icon="@drawable/ic_playlist"
+
+     />
+
+  <item
+      android:id="@+id/menu_item_more"
+      android:title="More"
+      android:icon="@drawable/ic_more"
+
+     />
+
+
+</menu>

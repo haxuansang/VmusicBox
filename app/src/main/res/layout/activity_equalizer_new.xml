@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/eqcontainer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="32.0dip">
+
+        <TextView
+            android:id="@+id/maxLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="+15"
+            android:textColor="@color/equa_text"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/centerLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="dp"
+            android:textColor="@color/equa_text"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/minLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="-15"
+            android:textColor="@color/equa_text"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.mozia.VmusicBox.VerticalSeekBar
+            android:id="@+id/EQBand0SeekBar" android:layout_width="wrap_content" android:layout_height="@dimen/_170sdp" android:layout_margin="@dimen/_5sdp" style="@style/Widget.Holo.SeekBar.Vertical" />
+
+        <TextView
+            android:id="@+id/EQBand0TextView"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="3000"
+            android:textColor="@color/equa_text" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.mozia.VmusicBox.VerticalSeekBar
+            android:id="@+id/EQBand1SeekBar" android:layout_width="wrap_content" android:layout_height="@dimen/_170sdp" android:layout_margin="@dimen/_5sdp" style="@style/Widget.Holo.SeekBar.Vertical" />
+        <TextView android:layout_gravity="center" android:id="@+id/EQBand1TextView"  android:textColor="@color/equa_text" android:layout_width="50.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.mozia.VmusicBox.VerticalSeekBar
+            android:id="@+id/EQBand2SeekBar" android:layout_width="wrap_content" android:layout_height="@dimen/_170sdp" android:layout_margin="@dimen/_5sdp" style="@style/Widget.Holo.SeekBar.Vertical" />
+        <TextView android:layout_gravity="center" android:id="@+id/EQBand2TextView"  android:textColor="@color/equa_text" android:layout_width="50.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.mozia.VmusicBox.VerticalSeekBar
+            android:id="@+id/EQBand3SeekBar" android:layout_width="wrap_content" android:layout_height="@dimen/_170sdp" android:layout_margin="@dimen/_5sdp" style="@style/Widget.Holo.SeekBar.Vertical" />
+
+        <TextView
+            android:textColor="@color/equa_text"
+            android:id="@+id/EQBand3TextView"
+            android:layout_width="50.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="3" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.mozia.VmusicBox.VerticalSeekBar
+            android:id="@+id/EQBand4SeekBar" android:layout_width="wrap_content" android:layout_height="@dimen/_170sdp" android:layout_margin="@dimen/_5sdp" style="@style/Widget.Holo.SeekBar.Vertical" />
+        <TextView android:layout_gravity="center" android:textColor="@color/equa_text" android:id="@+id/EQBand4TextView" android:layout_width="50.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.mozia.VmusicBox.VerticalSeekBar
+            android:id="@+id/EQBand5SeekBar" android:layout_width="wrap_content" android:layout_height="@dimen/_170sdp" android:layout_margin="@dimen/_5sdp" style="@style/Widget.Holo.SeekBar.Vertical" />
+        <TextView android:layout_gravity="center" android:textColor="@color/equa_text" android:id="@+id/EQBand5TextView" android:layout_width="50.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

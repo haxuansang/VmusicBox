@@ -1,0 +1,95 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'moziasoft'
+            storeFile file('/Users/mozia/Desktop/mp3Late/untitled folder/FreeMp3Song/keystore/key.jks')
+            storePassword 'moziasoft'
+            v2SigningEnabled true
+        }
+    }
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.mozia.VmusicBox"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 3
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [onesignal_app_id               : "641ea296-c776-45e4-b069-0614aea0968b",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "10084000"]
+        multiDexEnabled true
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.firebase:firebase-ads:10.0.1'
+    implementation files('libs/ypylibs.jar')
+    implementation files('libs/universal-image-loader-1.9.3.jar')
+    implementation 'com.google.android.gms:play-services:10.0.1'
+    implementation 'com.google.android.gms:play-services-analytics:10.0.1'
+    implementation project(':library')
+    implementation 'com.onesignal:OneSignal:3.+@aar'
+    implementation 'com.android.support:multidex:1.0.0'
+    implementation 'com.android.support:support-v4:27.1.1'
+    // Required for OneSignal, even if you have added FCM.
+    //compile 'com.google.android.gms:play-services-gcm:10.0.1'
+    // Required for geotagging
+    //compile "com.google.android.gms:play-services-location:10.0.1"
+    implementation 'com.facebook.android:facebook-android-sdk:4.19.0'
+    // Include all the Twitter APIs
+    implementation 'com.twitter.sdk.android:twitter:3.1.0'
+    // (Optional) Monetize using mopub
+    implementation 'com.twitter.sdk.android:twitter-mopub:3.1.0'
+    implementation 'com.twitter.sdk.android:twitter-core:3.1.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.4'
+    implementation 'com.kaopiz:kprogresshud:1.1.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.facebook.fresco:fresco:1.10.0'
+    implementation 'com.h6ah4i.android.widget.verticalseekbar:verticalseekbar:0.7.2'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+
+// JSON Parsing
+    implementation 'com.google.code.gson:gson:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+    //IBM
+    implementation 'com.ibm.watson.developer_cloud:java-sdk:6.6.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.15'
+    //easy view
+    implementation 'com.jude:easyrecyclerview:4.4.2'
+    //Picassp
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation'com.github.bumptech.glide:glide:3.7.0'
+}

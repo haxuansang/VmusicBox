@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_root"
+        android:layout_width="fill_parent"
+        android:layout_height="90.0sp"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="10.0dip">
+
+        <ImageView
+            android:id="@+id/img_songs"
+            android:layout_width="55sp"
+            android:layout_height="55sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_music_default" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0sp"
+            android:layout_marginRight="5.0sp"
+            android:layout_toLeftOf="@+id/img_indicator"
+            android:layout_toRightOf="@+id/img_songs"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_song"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="VEXKHOIS"
+                android:textColor="@color/white"
+                android:textSize="15.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_album"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="Do Bao"
+                android:textColor="@color/black_secondary_text"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0sp"
+            android:background="@drawable/ic_more_vert_black_24dp" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light" />
+    <style name="blue" parent="@style/_blue" />
+    <style name="SeekBarblue" parent="@android:style/Widget.Holo.Light.SeekBar">
+        <item name="android:indeterminateDrawable">@drawable/blue_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:progressDrawable">@drawable/blue_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:thumb">@drawable/blue_scrubber_control_selector_holo_light</item>
+    </style>
+    <style name="_blue" parent="@android:style/Theme.Light">
+        <item name="android:seekBarStyle">@style/SeekBarblue</item>
+    </style>
+</resources>
